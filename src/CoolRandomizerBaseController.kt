@@ -16,7 +16,6 @@ import java.util.*
 class CoolRandomizerBaseController : Initializable {
     @FXML lateinit var view : VBox
 
-
     @FXML private lateinit var grid : GridPane
     @FXML private lateinit var button : Button
 
