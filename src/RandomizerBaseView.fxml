@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.121"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="CoolRandomizerBaseController">
+<VBox fx:id="view" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="RandomizerBaseController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
-    <GridPane gridLinesVisible="true" VBox.vgrow="ALWAYS">
+    <GridPane fx:id="grid" gridLinesVisible="true" VBox.vgrow="ALWAYS">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -24,37 +24,37 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
-        <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <VBox fx:id="box1" alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <VBox fx:id="box2" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <VBox fx:id="box3" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <VBox fx:id="box4" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+        <VBox fx:id="box5" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
               GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+        <VBox fx:id="box6" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
               GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+        <VBox fx:id="box7" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+        <VBox fx:id="box8" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2"
               GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
-        <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
+        <VBox fx:id="box9" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
               GridPane.valignment="CENTER">
             <Label text="Label"/>
         </VBox>
     </GridPane>
-    <Button mnemonicParsing="false" text="Randomize" onMouseClicked="#onButtonClicked"/>
+    <Button fx:id="button" mnemonicParsing="false" text="Randomize" onMouseClicked="#onButtonClicked"/>
 </VBox>

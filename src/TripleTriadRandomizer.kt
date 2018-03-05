@@ -4,7 +4,8 @@ import javafx.stage.Stage
 
 class TripleTriadRandomizer : Application() {
     override fun start(primaryStage: Stage) {
-        val controller = CoolRandomizerBaseController()
+        val controller = RandomizerBaseController()
+        primaryStage.title = "Triple Triad Randomizer"
         primaryStage.scene = Scene(controller.view)
         primaryStage.show()
     }

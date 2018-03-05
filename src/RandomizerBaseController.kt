@@ -13,11 +13,23 @@ import java.net.URL
 import java.util.*
 
 
-class CoolRandomizerBaseController : Initializable {
+class RandomizerBaseController : Initializable {
     @FXML lateinit var view : VBox
 
     @FXML private lateinit var grid : GridPane
     @FXML private lateinit var button : Button
+
+    @FXML private lateinit var box1 : VBox
+    @FXML private lateinit var box2 : VBox
+    @FXML private lateinit var box3 : VBox
+    @FXML private lateinit var box4 : VBox
+    @FXML private lateinit var box5 : VBox
+    @FXML private lateinit var box6 : VBox
+    @FXML private lateinit var box7 : VBox
+    @FXML private lateinit var box8 : VBox
+    @FXML private lateinit var box9 : VBox
+
+    private lateinit var boxes : List<VBox>
 
     init {
         val fxmlLoader = FXMLLoader()
@@ -27,9 +39,8 @@ class CoolRandomizerBaseController : Initializable {
     }
 
     override fun initialize(location: URL?, resources: ResourceBundle?) {
-        view
-        grid
-        button
+        boxes = listOf(box1, box2, box3, box4, box5, box6, box7, box8, box9)
+        runRandomizer()
     }
 
     @FXML fun onButtonClicked(event: MouseEvent) {
@@ -37,10 +48,16 @@ class CoolRandomizerBaseController : Initializable {
     }
 
     private fun runRandomizer() {
-        grid.children.forEach {
-            val child = it as VBox
+        boxes.forEach {
             val element = getRandomElement()
-            (child.children.single() as Label).textFill = Color.PURPLE
+            it.style = "-fx-background-color: ${element.fillColour};";
+            val label = it.children.single() as Label
+            label.text = element.text()
+            if (element == Element.Poison || element == Element.Earth) {
+                label.textFill = Color.WHITE
+            } else {
+                label.textFill = Color.BLACK
+            }
         }
     }
 
