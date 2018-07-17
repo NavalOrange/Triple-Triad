@@ -25,35 +25,35 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
         <VBox fx:id="box1" alignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box2" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box3" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box4" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box5" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
               GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box6" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
               GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box7" alignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box8" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2"
               GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
         <VBox fx:id="box9" alignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
               GridPane.valignment="CENTER">
-            <Label text="Label"/>
+            <Label text="Label" visible="false"/>
         </VBox>
     </GridPane>
     <Button mnemonicParsing="false" text="Randomize" onMouseClicked="#onButtonClicked"/>

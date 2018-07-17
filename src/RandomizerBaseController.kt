@@ -77,16 +77,16 @@ class RandomizerBaseController : Initializable {
     }
 }
 
-enum class Element(val fillColour: String, val fontColour : Color, private val textValue : String? = null) {
+enum class Element(fillColour: String, val fontColour : Color, private val textValue : String? = null) {
     None("#FFFFFF", Color.BLACK, "Non-Elemental"),
-    Fire("#FF0000", Color.BLACK),
-    Ice("#b4cffa", Color.BLACK),
-    Lightning("#f0fb3e", Color.BLACK),
-    Earth("#613318", Color.WHITE),
-    Poison("#551A8B", Color.WHITE),
-    Water("#40a4df", Color.BLACK),
-    Holy("#FFE4E1", Color.BLACK),
-    Wind("#6ABF51", Color.BLACK);
+    Fire("#FF5757", Color.BLACK),
+    Ice("#60E2E2", Color.BLACK),
+    Lightning("#F4C500", Color.BLACK),
+    Earth("#B76411", Color.BLACK),
+    Poison("#B483ED", Color.BLACK),
+    Water("#4E85DD", Color.BLACK),
+    Holy("#FFE2A1", Color.BLACK),
+    Wind("#51E59A", Color.BLACK);
 
     private val image = Image(Element::class.java.getResource( "assets/$name.png" ).toString())
     val background : Background
