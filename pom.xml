@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Justin-SW15</groupId>
+  <artifactId>TT</artifactId>
+  <version>1.1</version>
+  <packaging>jar</packaging>
+  <build>
+	<sourceDirectory>${basedir}/src</sourceDirectory>
+	<finalName>Triad</finalName>
+    <plugins>
+	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <version>2.3.2</version>
+	    <configuration>
+	  	  <source>${jdk.version}</source>
+	  	  <target>${jdk.version}</target>
+	    </configuration>
+	  </plugin>
+	<plugin>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-jar-plugin</artifactId>
+	  <version>2.4</version>
+	</plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>TripleTriad</name>
+      <url>https://nexus.empowerops.ca/repository/maven-releases</url>
+    </repository>
+  </distributionManagement>
+</project>
